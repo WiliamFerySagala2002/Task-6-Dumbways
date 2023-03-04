@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   padding: 10px 15px;
   align-items: center;
-  background: #fff;
+  background: #dedede;
 }
 
 .logo {
@@ -146,6 +146,7 @@ i.fa-solid.fa-bars {
 @media only screen and (min-width: 768px) {
   header {
     padding: 10px 70px;
+    background: #fff;
   }
 
   .logo p {

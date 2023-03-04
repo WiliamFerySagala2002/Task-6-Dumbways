@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
@@ -27,11 +27,11 @@
           <ul>
             <li>
               <i class="fa-solid fa-house"></i>
-              <a href="">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
               <i class="fa-solid fa-briefcase"></i>
-              <a href="">Project</a>
+              <a href="project.html">Project</a>
             </li>
           </ul>
         </nav>
@@ -77,6 +77,35 @@
       </div>
     </div>
 
+    <main>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option></option>
+          <option value="collaboration">Collaboration</option>
+          <option value="discussion">Discussion</option>
+          <option value="hiring">Hiring</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="buttonSubmit">
+          <button type="submit" onclick="getData()">submit</button>
+        </div>
+      </form>
+    </main>
+
     <script src="assets/js/humbNav.js"></script>
+    <script src="/assets/js/contact.js"></script>
   </body>
 </html>
